@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.helloandroid1.nika.helloandroid1.MainActivity">
+
+    <ImageView
+        android:src="@drawable/project1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:background="#313030">
+
+                <ImageView
+                    android:id="@+id/emptyCell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/empty"
+                    android:paddingRight="8dp"/>
+
+                <ImageView
+                    android:id="@+id/udacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/udacity" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:background="#313030"
+                >
+
+                <ImageView
+                    android:id="@+id/imageViewMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_map_white_24dp"
+                    android:paddingRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="2465 Latham St, Mountain View, CA 94043"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"
+                android:background="#313030">
+
+                <ImageView
+                    android:id="@+id/imageViewPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_call_white_24dp"
+                    android:paddingRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/open_sans"
+                    android:text="650-555-5555"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"
+                android:background="#02b3e4">
+
+                <ImageView
+                    android:id="@+id/imageViewPublic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_public_white_24dp"
+                    android:paddingRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="www.udacity.com"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
