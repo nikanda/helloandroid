@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.helloandroid1.nika.helloandroid1.MainActivity">
+    tools:context="com.helloandroid1.nika.helloandroid.MainActivity">
 
     <ImageView
         android:src="@drawable/project1"

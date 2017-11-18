@@ -1,4 +1,4 @@
-package com.helloandroid1.nika.helloandroid1;
+package com.helloandroid1.nika.helloandroid;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.helloandroid1.nika.helloandroid1;
+package com.helloandroid1.nika.helloandroid;
 
 import org.junit.Test;
 
