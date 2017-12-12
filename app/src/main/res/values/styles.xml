@@ -4,8 +4,26 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">#dceef2</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">#454444</item>
+        <item name="colorAccent">#ffffff</item>
+    </style>
+
+    <style name="Quote1">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textIsSelectable">false</item>
+    </style>
+
+    <style name="Quote2">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textIsSelectable">false</item>
     </style>
 
 </resources>
