@@ -7,7 +7,7 @@
     tools:context="com.helloandroid1.nika.helloandroid.MainActivity">
 
     <ImageView
-        android:src="@drawable/project1"
+        android:src="@drawable/project3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop" />
@@ -47,7 +47,6 @@
                     android:scaleType="fitStart"
                     android:src="@drawable/udacity" />
 
-
             </TableRow>
 
             <TableRow
@@ -55,24 +54,24 @@
                 android:layout_height="match_parent"
                 android:paddingTop="16dp"
                 android:paddingLeft="16dp"
-                android:background="#313030"
-                >
+                android:background="#313030">
 
                 <ImageView
                     android:id="@+id/imageViewMap"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_map_white_24dp"
-                    android:paddingRight="8dp"/>
+                    android:paddingRight="8dp" />
 
                 <TextView
                     android:id="@+id/textViewAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/open_sans"
-                    android:text="2465 Latham St, Mountain View, CA 94043"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp" />
+                    android:autoLink="map"
+                    android:linksClickable="true"
+                    android:singleLine="false"
+                    android:text="@string/line_1"
+                    android:textAppearance="@style/Quote1" />
 
             </TableRow>
 
@@ -95,11 +94,10 @@
                     android:id="@+id/textViewPhoneNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
-                    android:fontFamily="@font/open_sans"
-                    android:text="650-555-5555"
-                    android:textColor="#ffffff"
-                    android:textSize="15sp" />
+                    android:text="@string/line_2"
+                    android:textAppearance="@style/Quote1"
+                    android:autoLink="phone"
+                    android:linksClickable="true" />
 
             </TableRow>
 
@@ -122,11 +120,10 @@
                     android:id="@+id/textViewLink"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
-                    android:fontFamily="@font/open_sans_semibold"
-                    android:text="www.udacity.com"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
+                    android:text="@string/line_3"
+                    android:textAppearance="@style/Quote2"
+                    android:autoLink="web"
+                    android:linksClickable="true" />
 
             </TableRow>
 
@@ -134,6 +131,17 @@
 
     </LinearLayout>
 
-
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_school_white_24dp1"
+        app:backgroundTint="#fbb03b"
+        app:fabSize="normal" />
 
 </RelativeLayout>
